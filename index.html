@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamp Duty UK Calculator</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #f8fafc;
+            background:
+                radial-gradient(circle at top, rgba(255,255,255,0.10), transparent 34%),
+                linear-gradient(180deg, #0f2c69 0%, #0a1d47 100%);
+        }
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 56px 24px 72px;
+        }
+        .hero {
+            display: grid;
+            gap: 28px;
+            align-items: center;
+            margin-bottom: 56px;
+        }
+        .hero-card, .panel {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 24px;
+            box-shadow: 0 18px 48px rgba(2, 8, 23, 0.28);
+            backdrop-filter: blur(12px);
+        }
+        .hero-card {
+            padding: 28px;
+        }
+        .brand {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .eyebrow {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(214, 184, 107, 0.16);
+            color: #f6dd96;
+            font-size: 0.88rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.04;
+            margin-bottom: 16px;
+        }
+        .lead {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.86);
+            max-width: 680px;
+        }
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 28px;
+        }
+        .button, .button-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 18px;
+            border-radius: 14px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        .button {
+            background: #f7d06a;
+            color: #102b63;
+        }
+        .button-secondary {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.14);
+            color: #ffffff;
+        }
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+        .grid.two {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+        .panel {
+            padding: 24px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+        }
+        p, li {
+            color: rgba(255,255,255,0.84);
+        }
+        ul {
+            padding-left: 22px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .section {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        .feature-list {
+            display: grid;
+            gap: 14px;
+            margin-top: 16px;
+        }
+        .feature {
+            padding: 18px;
+            border-radius: 18px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.10);
+        }
+        a {
+            color: #f7d06a;
+        }
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.12);
+            color: rgba(255,255,255,0.62);
+            font-size: 0.92rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-card">
+                <div class="brand">
+                    <div>
+                        <div class="eyebrow">UK Property Tax Planning</div>
+                        <h1>Stamp Duty UK Calculator</h1>
+                    </div>
+                </div>
+                <p class="lead">Estimate SDLT, LBTT and LTT before you make an offer, then save and compare property scenarios so you can understand the real cost of buying in the UK.</p>
+                <div class="cta-row">
+                    <a class="button" href="support.html">Get Support</a>
+                    <a class="button-secondary" href="privacy.html">Privacy Policy</a>
+                    <a class="button-secondary" href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid two section">
+            <div class="panel">
+                <h2>What It Does</h2>
+                <div class="feature-list">
+                    <div class="feature">
+                        <h3>Calculate UK property tax fast</h3>
+                        <p>Check Stamp Duty Land Tax in England and Northern Ireland, LBTT in Scotland, and LTT in Wales for the 2026/27 tax year.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Plan the full purchase cost</h3>
+                        <p>See more than the tax bill with solicitor and survey estimates plus a total purchase cost summary.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Save and compare scenarios</h3>
+                        <p>Keep property options handy, revisit them later, and compare two purchase scenarios side by side.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Who It Is For</h2>
+                <ul>
+                    <li>First-time buyers checking relief eligibility</li>
+                    <li>Home movers comparing multiple property prices</li>
+                    <li>Buyers checking additional-property surcharges</li>
+                    <li>Users who need Scotland LBTT or Wales LTT support</li>
+                    <li>Anyone who wants a quick tax estimate before speaking to a solicitor or adviser</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid two section">
+            <div class="panel">
+                <h2>Premium</h2>
+                <p>Premium is a one-time purchase, not a subscription.</p>
+                <ul>
+                    <li>Unlimited saved scenarios</li>
+                    <li>Compare mode without watching ads</li>
+                    <li>Ad-free planning experience</li>
+                </ul>
+            </div>
+
+            <div class="panel">
+                <h2>Privacy</h2>
+                <ul>
+                    <li>No account required</li>
+                    <li>Saved scenarios stay on your device</li>
+                    <li>No first-party behavioural analytics</li>
+                    <li>Optional ad tracking permission for more relevant ads in the free version</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="panel section">
+            <h2>Important</h2>
+            <p>Stamp Duty UK Calculator provides estimates for guidance only and does not constitute financial, tax, or legal advice. Always confirm key decisions with HMRC, Revenue Scotland, the Welsh Revenue Authority, or a qualified professional.</p>
+        </section>
+
+        <div class="footer">
+            <p>&copy; 2026 Cosmic Production d.o.o. Stamp Duty UK Calculator.</p>
+        </div>
+    </div>
+</body>
+</html>
